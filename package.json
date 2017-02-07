@@ -4,7 +4,9 @@
   "description": "Little counter project to try out different frameworks.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+    "start": "http-server -p 9000"
   },
   "author": "Beck Kramer",
   "license": "MIT",
